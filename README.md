@@ -1,0 +1,2 @@
+# form-validation
+This is a form validation project. I want to make it clear that "signing up" does not do ANYTHING on this project. When you fill in the information and click submit, the information you entered is saved to an object then that object is displayed in the console. I am in no way saving any information here that you enter. If you want to test this project, feel free to use dummy information! I am not capturing anything
