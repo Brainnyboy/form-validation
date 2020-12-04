@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika&display=swap');
+
+
+:root {
+    --primary: #231123;
+    --secondary: #2C302E;
+    --text: #ffffff;
+    --accent: #ED6A5A;
+    --background: #E6EBE0;
+    --background-light: #eceeeb;
+    --border-radius: 5px;
+    --box-shadow: 0 7px 30px 10px rgba(0, 0, 0, 0.3);
+    --border: 1px solid var(--primary);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Signika, sans-serif;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--background);
+}
+
+.container {
+    width: 480px;
+    min-height: 90vh;
+    padding-bottom: 20px;
+    background: var(--background-light);
+    border-radius: var(--border-radius);
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+}
+
+/*form*/
+form {
+    width: 90%;
+
+}
+
+.form-group {
+    height: 65px;
+    color: var(--primary);
+}
+
+label {
+    position: relative;
+    bottom: 3px;
+}
+
+input {
+    width: 100%;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+    background: #f5f6f4;
+    color: var(--primary) !important;
+    transition: all 0.3s;
+}
+
+input:valid {
+    border: 1px solid #3ccd3c;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: var(--accent);
+    color: var(--text);
+    /*padding: 10px 15px;*/
+    border-radius: var(--border-radius);
+    font-family: Signika, sans-serif;
+    width: 100%;
+    margin-top: 5px;
+    height: 50px;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+button:hover {
+    background: var(--secondary);
+}
+
+button:focus {
+    outline: none;
+}
+
+h1 {
+    color: var(--primary);
+}
+
+h3 {
+    color: var(--secondary);
+}
+
+.message-container {
+    border: 1px solid var(--secondary);
+    border-radius: 5px;
+    width: 90%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    color: var(--primary);
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+        box-sizing: border-box;
+        box-shadow: 0 0 20px 10px rgba(0,0,0,0.3);
+    }
+}
